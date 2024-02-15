@@ -10,12 +10,12 @@
 <body>
     <a-scene embedded arjs>
         <!-- Mode AR -->
-        <a-entity id="arHewan" visible="true" scale="0.5 0.5 0.5" animation="property: rotation; to: 0 360 0; dur: 10000; loop: true">
+        <a-entity id="serigala" visible="true" scale="0.5 0.5 0.5" animation="property: rotation; to: 0 360 0; dur: 10000; loop: true">
             <a-entity gltf-model="Asset/wolf.gltf" position="0 0 -1"></a-entity>
         </a-entity>
 
         <!-- Mode VR -->
-        <a-entity id="vrHewan" visible="false" position="0 0 -5" scale="2 2 2" animation="property: rotation; to: 0 360 0; dur: 10000; loop: true">
+        <a-entity id="gajah" visible="false" position="0 0 -5" scale="2 2 2" animation="property: rotation; to: 0 360 0; dur: 10000; loop: true">
             <a-entity gltf-model="Asset/mamut.gltf" position="0 0 -1"></a-entity>
         </a-entity>
 
@@ -36,8 +36,8 @@
     <script>
         // Switch antara AR dan VR mode
         document.getElementById('switchButton').addEventListener('click', function() {
-            var arHewan = document.getElementById('arHewan');
-            var vrHewan = document.getElementById('vrHewan');
+            var arHewan = document.getElementById('serigala');
+            var vrHewan = document.getElementById('gajah');
             var arHewanContainer = document.getElementById('arHewanContainer');
 
             if (arHewan.getAttribute('visible')) {
